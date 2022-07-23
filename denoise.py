@@ -13,7 +13,7 @@ def marcenko_pastur(q, var, pts=1000):
     :param pts: the number of points for linear span
     """    
     # upper and lower bound for eigenvalues
-    e_min, e_max = var * (1 - (1. / q) ** .5) **2, var * (1 + (1. / q) ** .5) ** 2
+    e_min, e_max = var * (1 - (1. / q) ** .5) ** 2, var * (1 + (1. / q) ** .5) ** 2
     e_span = np.linspace(e_min, e_max, pts).flatten()
     
     # Marcenko – Pastur probability density function
