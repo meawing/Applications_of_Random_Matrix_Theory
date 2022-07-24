@@ -1,7 +1,7 @@
 # Applications_of_Random_Matrix_Theory
 
 Application of Random Matrix Theory to noisy covariance matrix estimation. 
-The library of cleaning and shrinkage (narrowing down distribution of eigenvalues) methods is going to be updated.
+The library of cleaning and shrinkage (narrowing down the distribution of eigenvalues) methods is going to be updated.
 Monte-Carlo experiments comparing the methods are conducted.
 
 # References
