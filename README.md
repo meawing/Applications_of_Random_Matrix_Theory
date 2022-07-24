@@ -11,4 +11,4 @@ The library of cleaning and shrinkage (narrowing down distribution of eigenvalue
 - [Ledoit, O. and Wolf, M. (2020). Analytical nonlinear shrinkage of large-dimensional covariance matrices. Annals of Statistics.](https://www.econ.uzh.ch/dam/jcr:87976d27-67fa-442b-bceb-8af7a0681ba2/annals_2020.pdf)
 
 - [Ledoit, O. and Wolf, M. (2022) Quadratic shrinkage for large covariance
-matrices. Bernoulli] (https://www.econ.uzh.ch/dam/jcr:27e9ffa4-578e-4d6f-84d9-7707c98cedb0/bernoulli_2022.pdf)
+matrices. Bernoulli](https://www.econ.uzh.ch/dam/jcr:27e9ffa4-578e-4d6f-84d9-7707c98cedb0/bernoulli_2022.pdf)
