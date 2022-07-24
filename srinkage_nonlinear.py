@@ -1,6 +1,5 @@
-# This code is largely based on pyRMT source code
-# Autors: Gregory Giecold and Lionel Ouaknin
-# MIT License
+# This code is based on pyRMT source code
+# Autors: Gregory Giecold and Lionel Ouaknin, MIT License
 
 import numpy as np
 
@@ -52,7 +51,7 @@ def ledoit_wolf_nonlin(cov_smp, T):
     N = cov_smp.shape[0]
     q = N / T
 
-    # return the original eigenvalues and eigenvectors
+    # get the original eigenvalues and eigenvectors in sorted order
     e_val, e_vec = np.linalg.eigh(cov_smp)
     idx = e_val.argsort()[::1]
     e_val, e_vec = e_val[idx], e_vec[:, idx]

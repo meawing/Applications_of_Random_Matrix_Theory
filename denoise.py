@@ -63,12 +63,15 @@ def laloux(cov_smp, T, bwidth=.01):
     :param bwidth: bandwidth of the kernel
     :return: type np.ndarray. Denoised covariance matrix
     """
-
     N = cov_smp.shape[0]
     q = T / N
-    if q < 1:
+    
+    if q <= 1:
         warnings.warn("""It is assumed that the number of samples
-                        T must be higher than the number of features N""", UserWarning)    
+                        T must be higher than the number of features N""", UserWarning) 
+    if q == 1:
+        # this case will break fitting procedure, adjust T in order to avoid it
+        T -= 1    
         
     # scale sample covariance to correlation matrix
     std_smp = np.sqrt(np.diag(cov_smp).reshape(-1, 1))
@@ -77,7 +80,7 @@ def laloux(cov_smp, T, bwidth=.01):
     # assuming the unite variance of underlying process since the correlation has ones on the diagonal
     var = 1
     
-    # return the original eigenvalues and eigenvectors
+    # get the original eigenvalues and eigenvectors in sorted order
     e_val, e_vec = np.linalg.eigh(corr_smp)
     idx = e_val.argsort()[::-1]
     e_val, e_vec = e_val[idx], e_vec[:, idx]
