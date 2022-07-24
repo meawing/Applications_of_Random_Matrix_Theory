@@ -2,7 +2,7 @@
 
 Application of Random Matrix Theory to noisy covariance matrix estimation. 
 The library of cleaning and shrinkage (narrowing down the distribution of eigenvalues) methods is going to be updated.
-Monte-Carlo experiments comparing the methods are conducted.
+Monte-Carlo experiments comparing the methods, including portfolio optimization, are conducted.
 
 # References
 - [Laloux, L., P. Cizeau, J. P. Bouchaud, and M. Potters (2000). Random Matrix Theory and Financial Correlations. International Journal of Theoretical and Applied Finance](https://www.math.nyu.edu/~avellane/LalouxPCA.pdf). 
